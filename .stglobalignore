@@ -147,6 +147,8 @@ Program Files/
 (?d)(?i)*-venv
 (?d)(?i).virtualenv
 (?d)(?i).virtualenvs
+(?d)(?i)virtualenv
+(?d)(?i)virtualenvs
 
 // ┌───────────┐
 // │ Log Files │
