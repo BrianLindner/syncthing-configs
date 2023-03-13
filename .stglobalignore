@@ -1,0 +1,279 @@
+// ┌─────────────┐
+// │ Apple macOS │
+// └─────────────┘
+
+(?d).DS_Store
+(?d).localized
+(?d)._*
+(?d).Icon*
+(?d).fseventsd
+(?d).Spotlight-V100
+(?d).DocumentRevisions-V100
+(?d).TemporaryItems
+(?d)Temporary Items
+(?d).Trashes
+(?d).Trash-1000
+(?d).iCloud
+(?d).VolumeIcon.icns
+(?d).AppleDB
+(?d).AppleDesktop
+(?d)Network Trash Folder
+(?d).apdisk
+
+// ┌───────────────────┐
+// │ Linux and Related │
+// └───────────────────┘
+(?d)lost+found
+(?d).directory
+(?d).Trash-*
+
+// ┌───────────────────┐
+// │ Microsoft Windows │
+// └───────────────────┘
+(?d)desktop.ini
+(?d)ehthumbs.db
+(?d)Thumbs.db
+(?d)$RECYCLE.BIN
+(?d)System Volume Information
+Program Files (x86)/
+Program Files/
+
+// ┌──────────────┐
+// │ Synology NAS │
+// └──────────────┘
+(?d)(?i)@eaDir
+(?d)(?i)@SynoResource
+(?d)(?i)#Recycle
+(?i)#Snapshot
+
+// ┌──────────┐
+// │ QNAP NAS │
+// └──────────┘
+(?d).AppleDB
+(?d).@_thumb
+(?d).@__thumb
+(?d).@datasync_temp_*
+(?d)@Recycle
+
+// ┌─────┐
+// │ Git │
+// └─────┘
+// default not to sync repos
+.git
+
+// ┌─────────────────┐
+// │ Adobe Lightroom │
+// └─────────────────┘
+*Previews.lrdata root-pixels.db
+
+// ┌─────────┐
+// │ Dropbox │
+// └─────────┘
+(?d).dropbox
+(?d).dropbox.attr
+
+// ┌────────────────────┐
+// │ Firefox & Chromium │
+// └────────────────────┘
+(?d)*.part
+(?d)*.crdownload
+
+// ┌──────────────────┐
+// │ Microsoft Office │
+// └──────────────────┘
+(?d)~*
+
+// ┌──────────────────────┐
+// │ Parallels VM for Mac │
+// └──────────────────────┘
+(?d).parallels-vm-directory
+
+// ┌───────────────────────┐
+// │ BTSync / Resilio Sync │
+// └───────────────────────┘
+(?d)(?i).sync
+(?d)(?i).rsls
+(?d)(?i)*.bts
+(?d)*.!Sync
+(?d).SyncID
+(?d).SyncIgnore
+(?d).SyncArchive
+(?d)*.SyncPart
+(?d)*.SyncTemp
+(?d)*.SyncOld
+
+// ┌────────────────────────────┐
+// │ Temporary and Backup Files │
+// └────────────────────────────┘
+(?d)(?i)*.temporary
+(?d)(?i)*.tmp
+(?d)*._mp
+(?i)(?i)*.old
+(?d)*.syd
+(?d)*.dir
+(?d)*.gid
+(?d)*.chk
+(?d)*.dmp
+(?d)*.nch
+(?d).*.swp
+(?d)*.swp
+(?d)*.delete
+(?d)*~
+(?d)*.download
+
+// ┌─────────────────┐
+// │ Image Previewse │
+// └─────────────────┘
+(?d)*.thumb
+(?d)*.thumbnails
+
+// ┌───────────────────┐
+// │ Vim, just in case │
+// └───────────────────┘
+(?d)*.*.sw[a-p]
+
+// ┌────────────┐
+// │ Apple Apps │
+// └────────────┘
+*.photoslibrary
+*.tvlibrary
+*.musiclibrary
+
+// ┌─────────────┐
+// │ Virtual Env │
+// └─────────────┘
+(?d)(?i).venv
+(?d)(?i)venv
+(?d)(?i)venv-*
+(?d)(?i)*-venv
+(?d)(?i).virtualenvs
+(?d)(?i).\envs
+
+// ┌───────────┐
+// │ Log Files │
+// └───────────┘
+(?d)(?i).{log,logs}
+(?d)(?i){log,logs}
+(?d)(?i)*.{log,logs}
+(?d)(?i)*.log.[0-9]
+(?d)(?i)*.log.[0-9][0-9]
+(?d)(?i)*_log
+(?d)npm-debug.log*
+(?d)yarn-debug.log*
+(?d)yarn-error.log*
+(?d)lerna-debug.log*
+(?d).pnpm-debug.log*
+
+// ┌────────┐
+// │ Python │
+// └────────┘
+(?d).Python
+(?d)__pycache__/
+(?d)*.pyc
+(?d)*.pyo
+(?d)*.pyd
+(?d)*$py.class
+(?d).pytest_cache/
+
+// Python: Installer logs
+(?d)pip-log.txt
+(?d)pip-delete-this-directory.txt
+
+// mypy
+(?d).mypy_cache/
+(?d).dmypy.json
+(?d)dmypy.json
+
+// Sphinx documentation
+(?d)docs/_build/
+
+// Pyre type checker
+(?d).pyre/
+
+// pytype static type analyzer
+(?d).pytype/
+
+// Cython debug symbols
+(?d)cython_debug/
+
+// PEP 582
+(?d)__pypackages__/
+
+// Celery stuff
+(?d)celerybeat-schedule
+(?d)celerybeat.pid
+
+// SageMath parsed files
+(?d)*.sage.py
+
+// Jupyter Notebooks
+(?d).ipynb_checkpoints
+(?d)*/.ipynb_checkpoints/*
+
+// IPython
+// profile_default/
+// ipython_config.py
+
+// ┌──────────────────────────┐
+// │ Distribution / packaging │
+// └──────────────────────────┘
+// build/
+// develop-eggs/
+// dist/
+// downloads/
+// eggs/
+// .eggs/
+// lib/
+// lib64/
+// parts/
+// sdist/
+// var/
+// wheels/
+// share/python-wheels/
+// *.egg-info/
+// .installed.cfg
+// *.egg
+// MANIFEST
+
+// ┌──────┐
+// │ Node │
+// └──────┘
+// Runtime data
+pids
+*.pid
+*.seed
+(?d)*.pid.lock
+
+// NPM related files
+// update-notifier-npm.json
+
+// Dependency directories
+node_modules/
+jspm_packages/
+
+// Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
+
+// TypeScript cache
+(?d)*.tsbuildinfo
+
+// Microbundle cache
+(?d).rpt2_cache/
+(?d).rts2_cache_cjs/
+(?d).rts2_cache_es/
+(?d).rts2_cache_umd/
+
+// Optional REPL history
+(?d).node_repl_history
+
+
+// ┌─────────┐
+// │ Ansible │
+// └─────────┘
+(?d)*.retry
+
+// ┌──────────┐
+// │ Database │
+// └──────────┘
+// Redis binary dump (dump.rdb) files
+(?d)*.rdb
