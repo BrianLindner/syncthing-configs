@@ -1,0 +1,7 @@
+// ┌────────────┐
+// │ Apple Apps │
+// └────────────┘
+*.photoslibrary
+*.tvlibrary
+*.musiclibrary
+(?d)(?i)*CloudSync.noindex*
