@@ -4,7 +4,7 @@
 (?d).DS_Store
 (?d).localized
 (?d)._*
-(?d).Icon*
+(?d).Icon?*
 (?d).fseventsd
 (?d).Spotlight-V100
 (?d).DocumentRevisions-V100
@@ -12,12 +12,15 @@
 (?d)Temporary Items
 (?d).Trashes
 (?d).Trash-1000
+(?d).local/share/trash
 (?d).iCloud
 (?d).VolumeIcon.icns
 (?d).AppleDB
 (?d).AppleDesktop
 (?d)Network Trash Folder
 (?d).apdisk
+(?d)(?i).Trash
+(?d)(?i)*CloudSync.noindex*
 
 // ┌───────────────────┐
 // │ Linux and Related │
@@ -31,8 +34,10 @@
 // └───────────────────┘
 (?d)desktop.ini
 (?d)ehthumbs.db
+(?d)ehthumbs_vista.db
 (?d)Thumbs.db
 (?d)$RECYCLE.BIN
+(?d)$WINDOWS.~BT
 (?d)System Volume Information
 Program Files (x86)/
 Program Files/
@@ -44,6 +49,7 @@ Program Files/
 (?d)(?i)@SynoResource
 (?d)(?i)#Recycle
 (?i)#Snapshot
+
 
 // ┌──────────┐
 // │ QNAP NAS │
@@ -64,6 +70,13 @@ Program Files/
 // │ Adobe Lightroom │
 // └─────────────────┘
 *Previews.lrdata root-pixels.db
+
+// ┌────────────┐
+// │ Apple Apps │
+// └────────────┘
+*.photoslibrary
+*.tvlibrary
+*.musiclibrary
 
 // ┌─────────┐
 // │ Dropbox │
@@ -93,7 +106,7 @@ Program Files/
 (?d)(?i).sync
 (?d)(?i).rsls
 (?d)(?i)*.bts
-(?d)*.!Sync
+(?d)(?i)*.!sync
 (?d).SyncID
 (?d).SyncIgnore
 (?d).SyncArchive
@@ -101,9 +114,10 @@ Program Files/
 (?d)*.SyncTemp
 (?d)*.SyncOld
 
-// ┌────────────────────────────┐
-// │ Temporary and Backup Files │
-// └────────────────────────────┘
+// ┌───────────────────────────────────┐
+// │ Temporary, Lock, and Backup Files │
+// └───────────────────────────────────┘
+
 (?d)(?i)*.temporary
 (?d)(?i)*.tmp
 (?d)*._mp
@@ -118,25 +132,26 @@ Program Files/
 (?d)*.swp
 (?d)*.delete
 (?d)*~
-(?d)*.download
+(?d)(?i)*.download
+(?d)(?i)asset-cache
+(?d)(?i).cache
+(?d)(?i)Caches
+(?d)(?i)Cache
+(?d)captcha_tmp
+(?d)(?i).#lk0x*
+(?d)(?i).~lock.*
+(?d)(?i)*.lock
 
-// ┌─────────────────┐
-// │ Image Previewse │
-// └─────────────────┘
+// ┌────────────────┐
+// │ Image Previews │
+// └────────────────┘
 (?d)*.thumb
 (?d)*.thumbnails
 
-// ┌───────────────────┐
-// │ Vim, just in case │
-// └───────────────────┘
-(?d)*.*.sw[a-p]
-
-// ┌────────────┐
-// │ Apple Apps │
-// └────────────┘
-*.photoslibrary
-*.tvlibrary
-*.musiclibrary
+// ┌──────┐
+// │ Vim  │
+// └──────┘
+(?d)*.*.sw[a-o]
 
 // ┌─────────────┐
 // │ Virtual Env │
