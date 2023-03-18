@@ -4,6 +4,8 @@ Collection of various Ignore patterns and other [Syncthing](https://syncthing.ne
 
 - [Installation](#installation)
 - [Ignore Files](#ignore-files)
+- [Addtional Ignores](#addtional-ignores)
+  - [Media](#media)
 
 
 ## Installation
@@ -45,3 +47,11 @@ Files:
 - [.stglobalignore](.stglobalignore)
 
 ---
+
+## Addtional Ignores
+
+For use as specific ignores, or for specialized overrides (to place in main .stignore with a ! prefix) to allow them
+
+### Media
+
+- [.stmediaignore](.stmediaignore)
